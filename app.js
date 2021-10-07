@@ -13,7 +13,7 @@ const config = {
   },
 };
 
-mdoules.exports = config;
+modules.exports = config;
 
 app.listen(8080, function() {
   console.log('listening on 8080')
