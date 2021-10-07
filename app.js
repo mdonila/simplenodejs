@@ -1,6 +1,20 @@
 const express = require('express');
 const app = express();
 
+
+const env = process.env;
+
+const config = {
+  db: { 
+    host: env.DB_HOST,
+    user: env.DB_USER,
+    password: env.DB_PASSWORD,
+    database: env.DB_NAME,
+  },
+};
+
+mdoules.exports = config;
+
 app.listen(8080, function() {
   console.log('listening on 8080')
 })
